@@ -1,0 +1,35 @@
+<apex:page standardController="Moon__c" recordSetVar="Moons" tabStyle="Moon__c" extensions="MoonList">
+    <apex:includeScript value="{!$Resource.jQuery}"/>
+
+ <apex:pageBlock >
+      <apex:pageblocksection >
+          <apex:form >
+              <apex:selectList size="1" value="{!SelectedPlanet}" onchange="sayHello();" id="ddlPlanets"> 
+                  <apex:selectOptions value="{!Planets}"> 
+                  </apex:selectOptions>
+              </apex:selectList>
+          </apex:form>
+          
+          <script>
+              function sayHello() {
+                  
+                  
+                  alert($('select[id=*ddlPlanets]').value());
+              }
+              
+          </script>
+      </apex:pageblocksection>
+      
+      <apex:pageblocksection >
+          <apex:pageBlockTable value="{!Moons}" var="moon" id="tblMoons">
+              <apex:column value="{!moon.Name}" />
+              <apex:column value="{!moon.Planet__c}" />
+              <apex:column >
+                  <apex:outputLink value="{!moon.Image__c}">
+                      <apex:image value="{!moon.Image__c}" id="someImage" height="100" width="100"/>
+                  </apex:outputLink>
+              </apex:column>
+          </apex:pageBlockTable>
+      </apex:pageblocksection>
+  </apex:pageBlock>
+</apex:page>
