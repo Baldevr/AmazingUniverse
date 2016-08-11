@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AmazingUniverse</fullName>
+    <types>
+        <members>MoonList</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Galaxy_List</members>
+        <members>MoonDisplay</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>Amazing_Universe</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Galaxies__c.Number_of_Star_Systems__c</members>
+        <members>Galaxies__c.photo__c</members>
+        <members>Moon__c.Image__c</members>
+        <members>Moon__c.Planet__c</members>
+        <members>Planet__c.Mass__c</members>
+        <members>Planet__c.Number_of_Moon__c</members>
+        <members>Planet__c.Radius__c</members>
+        <members>Planet__c.Star_System__c</members>
+        <members>Star_System__c.Galaxy__c</members>
+        <members>Star_System__c.Is_Active__c</members>
+        <members>Star_System__c.Number_of_Planets__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Galaxies__c</members>
+        <members>Moon__c</members>
+        <members>Planet__c</members>
+        <members>Star_System__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Galaxies__c</members>
+        <members>Moon__c</members>
+        <members>Planet__c</members>
+        <members>Star_System__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Galaxies__c-Galaxy Layout</members>
+        <members>Moon__c-Moon Layout</members>
+        <members>Planet__c-Planet Layout</members>
+        <members>Star_System__c-Solar System Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Galaxies__c.All</members>
+        <members>Moon__c.All</members>
+        <members>Planet__c.All</members>
+        <members>Star_System__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>SLDS203</members>
+        <members>jQuery</members>
+        <name>StaticResource</name>
+    </types>
+    <version>36.0</version>
+</Package>
